@@ -1,0 +1,29 @@
+{
+  "name": "coffee-shop-backend",
+  "version": "1.0.0",
+  "description": "a simple coffee shop app for a job interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "",
+    "cors": "",
+    "express": "",
+    "jsonwebtoken": "",
+    "md5": "",
+    "multer": "",
+    "mysql": "",
+    "nodemailer": "",
+    "randomstring": "",
+    "tinify": ""
+  },
+  "devDependencies": {
+    "expect": "",
+    "mocha": "",
+    "supertest": ""
+  }
+}

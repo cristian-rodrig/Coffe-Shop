@@ -1,0 +1,25 @@
+<p></p>
+  <div class="container">
+    <div class="row"> 
+      <div
+        class="column main"
+        *ngFor="let product of getproductsData()"
+      >
+      <app-coffee-card 
+      [product] = 'product' 
+      (addListEventEmiter)="addOrQuitProduct($event)"
+      (quitListEventEmiter)="addOrQuitProduct($event)"
+      ></app-coffee-card>
+      </div>
+      <div
+        class="column"
+        *ngFor="let extra of getextrasData()"
+      >
+      <app-coffee-card 
+      [product] = 'extra'
+      (addListEventEmiter)="addOrQuitProduct($event)"
+      (quitListEventEmiter)="addOrQuitProduct($event)"
+      ></app-coffee-card>
+      </div>
+    </div>
+  </div>

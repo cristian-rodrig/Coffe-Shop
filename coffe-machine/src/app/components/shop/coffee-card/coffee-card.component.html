@@ -1,0 +1,17 @@
+<a style="padding-right: 10px;">
+    <div class="coffee-card">
+      <div class="img-container">
+        <img [src]="product.image"/>
+      </div>
+      <div class="coffee-info text-center">
+        <p *ngIf="product.type=='extra'" class="type">Extra</p>
+        <p *ngIf="product.type=='principal'" class="type">Principal</p>
+        <p class="name">{{ product.name }}</p>
+        <p class="price">{{ product.price }}$</p>
+      </div>
+      <div class="bottom-card text-center">
+        <button *ngIf="product.selected==false" type="button" class="btn btn-light" (click)="addProduct(product)">Agregar</button>
+        <button *ngIf="product.selected==true" type="button" class="btn btn-danger" (click)="quitProduct(product)">Quitar</button>
+      </div>
+    </div>
+  </a>
